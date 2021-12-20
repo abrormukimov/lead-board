@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import display from './display.js';
 
 import { postData, setGameID } from './api-interface.js';
@@ -13,10 +13,15 @@ const clearInput = () => {
   scoreInput.value = '';
 };
 
+const validate = (name, score) => (name.length > 0 && score > -1);
+
 newScoreBtn.addEventListener('click', () => {
   const newScore = scoreInput.value;
-  const newName = nameInput.value;
-
+  const newName = nameInput.value.trim();
+  if (!validate(newName, newScore)) {
+    clearInput();
+    return;
+  }
   const scoreObj = {
     user: newName,
     score: newScore,
