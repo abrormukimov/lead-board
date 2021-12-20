@@ -1,51 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Leaderboard</title>
 </head>
+
 <body>
-  <div class="container">
-    <h1 class="title">Leaderboard</h1>
-    <div class="inner-ctn">
-      <div class="content-ctn">
-        <div class="recent-sc">
-          <span class="r-score">Recent scores</span>
-          <button class="refresh-btn" type="button">Refresh</button>
-        </div>
-        <div class="names">
-          <div class="record">
-            <span class="name">Name</span>
-            <span class="score">100</span>
-          </div>
-          <div class="record">
-            <span class="name">Name</span>
-            <span class="score">100</span>
-          </div>
-          <div class="record">
-            <span class="name">Name</span>
-            <span class="score">100</span>
-          </div>
-          <div class="record">
-            <span class="name">Name</span>
-            <span class="score">100</span>
-          </div>
-        </div>
+  <h1>Leaderboard</h1>
+  <div id="scores">
+    <div id="display">
+      <div id="title">
+        <span class="title"> Recent Scores</span>
+        <button id="refresh"> Refresh </button>
       </div>
-      <div class="input-field">
-        <span>Add your score</span>
-        <form class="form">
-          <input type="text" placeholder="Your name">
-          <input type="text" placeholder="Your score">
-          <button type="submit" class="submit-btn">Submit</button>
-        </form>
-      </div>
+      <ul id="list"></ul>
     </div>
-    
+    <div id="add-score">
+      <span class="title"> Add your score </span>
+      <input id="name" placeholder="Your Name">
+      <input id="score" type="number" min="0" placeholder="Your Score">
+      <button id="new-score">Submit</button>
+    </div>
+
   </div>
-  <script src="main.js"></script>
 </body>
+
 </html>
