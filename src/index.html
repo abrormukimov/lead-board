@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Leaderboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 
 <body>
   <h1>Leaderboard</h1>
   <div id="scores">
     <div id="display">
-      <div id="title">
-        <span class="title"> Recent Scores</span>
-        <button id="refresh"> Refresh </button>
+      <div class="title">
+        <span> Recent Scores</span>
+        <button class="btn btn-light" id="refresh"> Refresh </button>
       </div>
       <ul id="list"></ul>
     </div>
@@ -22,7 +23,7 @@
       <span class="title"> Add your score </span>
       <input id="name" placeholder="Your Name">
       <input id="score" type="number" min="0" placeholder="Your Score">
-      <button id="new-score">Submit</button>
+      <button class="btn btn-light" id="new-score">Submit</button>
     </div>
 
   </div>
