@@ -1,77 +1,31 @@
-* {
-  margin: 0;
+ul {
   padding: 0;
-  box-sizing: border-box;
+  list-style-type: none;
 }
 
-.inner-ctn {
+li {
+  border: 1px solid;
+  padding: 5px;
+}
+
+#scores {
   display: flex;
-  width: 70%;
-  margin: 0 auto;
-  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+#display {
+  margin: 5px;
+  width: 50%;
+}
+
+#add-score {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
 .title {
-  padding: 40px;
-  margin: 0 auto;
-  width: 80%;
-  font-size: 50px;
-}
-
-.content-ctn,
-.input-field {
-  flex: 1;
-  margin: 25px;
-  display: flex;
-  flex-direction: column;
-}
-
-.recent-sc,
-.form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.names {
-  border: 1px solid black;
-  margin-top: 10px;
-}
-
-.form {
-  flex-direction: column;
-}
-
-.form input {
-  width: 70%;
-  margin: 15px auto;
-  padding: 6px;
-}
-
-.form button {
-  width: 30%;
-  padding: 5px;
-  margin-left: 55%;
-}
-
-.input-field span {
-  text-align: center;
-}
-
-.record {
-  padding: 6px;
-}
-
-.record:nth-child(even) {
-  background: rgb(234, 235, 237);
-}
-
-.input-field span,
-.r-score {
-  font-size: 30px;
   font-weight: bold;
-}
-
-.recent-sc .refresh-btn {
-  padding: 0 5px;
-  font-size: 15px;
 }
